@@ -12,7 +12,7 @@ def index():
     <html>
         <head><title>Variables de Entorno</title></head>
         <body>
-            <h1>Variables desde Dockerrrr</h1>
+            <h1>Variables desde Dockerrrrrrr</h1>
             <p><strong>VAR1:</strong> {var1}</p>
             <p><strong>VAR2:</strong> {var2}</p>
         </body>

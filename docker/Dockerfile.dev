@@ -1,0 +1,9 @@
+#TODO: Es dev dado que no crea el volumen en el contenedor dado que se enlaza al directorio local
+
+FROM python:3.12-slim
+
+WORKDIR /dagster_home
+
+RUN pip install Flask
+
+CMD ["python", "prueba.py"]

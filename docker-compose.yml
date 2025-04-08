@@ -2,7 +2,7 @@ services:
   flaskapp:
     build:
       context: .
-      dockerfile: docker/Dockerfile.prueba
+      dockerfile: docker/Dockerfile
     container_name: flask_con_volumen
     ports:
       - "8080:8080"
@@ -10,6 +10,6 @@ services:
       VAR2: Mundo variable
     # 👇 Esta línea enlaza tu código local al contenedor directamente
     volumes:
-      - ./warp:/app         
-    working_dir: /app
+      - ./warp:/dagster_home         
+    working_dir: /dagster_home
     command: python prueba.py
