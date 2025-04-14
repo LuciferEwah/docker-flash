@@ -5,14 +5,14 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    var1 = os.getenv('VAR1', 'ENCONTRADOooooo')
+    var1 = os.getenv('VAR1', 'ENCONTRADO')
     var2 = os.getenv('VAR2', 'VALOR 2 NO ENCONTRADO')
 
     return f"""
     <html>
         <head><title>Variables de Entorno</title></head>
         <body>
-            <h1>Variables desde Dockerrrrrrr</h1>
+            <h1>Variables desde Dockerr</h1>
             <p><strong>VAR1:</strong> {var1}</p>
             <p><strong>VAR2:</strong> {var2}</p>
         </body>

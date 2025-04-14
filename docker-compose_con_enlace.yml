@@ -1,0 +1,26 @@
+services:
+  flaskapp:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.con_enlace
+    container_name: disk_con_enlace
+    ports:
+      - "8081:8080"
+    environment:
+      VAR2: Mundo variable
+    volumes:
+      - ./warp:/dagster_home         
+    working_dir: /dagster_home
+    command: python prueba.py
+    
+  flaskapp2:  # Cambia el nombre del segundo servicio
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.con_enlace
+    container_name: disk_con_enlace2
+    ports:
+      - "8083:8081"
+    volumes:
+      - ./warp:/dagster_home         
+    working_dir: /dagster_home
+    command: python prueba2.py
