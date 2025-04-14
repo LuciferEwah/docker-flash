@@ -10,7 +10,7 @@ def index():
 
     return f"""
     <html>
-        <head><title>Variables de Entorno</title></head>
+        <head><title>Variables de Entornoo</title></head>
         <body>
             <h1>Variables desde Dockerrr</h1>
             <p><strong>VAR1:</strong> {var1}</p>
