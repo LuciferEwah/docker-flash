@@ -1,0 +1,11 @@
+FROM python:3.12-slim
+
+# Establecer el directorio de trabajo dentro del contenedor
+WORKDIR /dagster_home
+
+# Copiar el contenido de la carpeta local warp/ al contenedor
+COPY etl_turorial/ /dagster_home
+
+# Instalar Flask (u otras dependencias que necesites)
+RUN pip install uv
+RUN uv sync
